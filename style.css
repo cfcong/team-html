@@ -12,13 +12,45 @@ body {
   /*border: 1px solid gray;*/
   margin: 10px;
   padding: 6px;
+  position: relative;
+  margin: 0 auto;
 }
 
 #team-members .member img {
   width: 200px;
   height: 200px;
+  position: relative;
+  left: 0;
+  box-shadow: 4px 5px 6px black
+}
+
+#team-members .member .rotation{
+  display:block;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  transform: rotate(30deg);
+  -webkit-transition:-webkit-transform 0.5s ease-in;
+}
+
+#team-members .member:hover .rotation{
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+ 
+#team-members .member:hover .normal{
+  display:none;
+}
+
+#team-members .member:hover .altered{
+  display:block;
+}
+
+#team-members .member .altered{
+  display:none;
 }
 
 #team-members .member div.name {
   text-align: center;  
 }
+
