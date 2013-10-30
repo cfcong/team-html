@@ -26,16 +26,22 @@ body {
 
 #team-members .member .rotation{
   display:block;
-  -webkit-transform: rotate(30deg);
-  -moz-transform: rotate(30deg);
-  transform: rotate(30deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
   -webkit-transition:-webkit-transform 0.5s ease-in;
 }
 
 #team-members .member:hover .rotation{
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  transform: rotate(0deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#team-members .member:nth-child(odd) .rotation:hover{
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
  
 #team-members .member:hover .normal{
