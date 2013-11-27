@@ -3,5 +3,4 @@
 A set of HTML files with CSS page displaying classmates profiles with transitions. 
 
 ## How to View:
-
-- open index.html file in your browser
+- open `index.html` file in your browser
